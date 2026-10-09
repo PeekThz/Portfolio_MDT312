@@ -1,0 +1,106 @@
+body {
+    background-color: #50586C;
+    color: #F5D042;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+}
+
+.Pancake {
+    background-color: #0A174E;
+    margin: 0 60px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 10px 5px #000;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #F5D042;
+    border-radius: 10px;
+
+}
+
+.top img {
+    width: 20%;
+    margin-left: 200px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 30px #0000007a;
+}
+
+.top h1 {
+    margin: 0 50px;
+    color: #0A174E;
+    font-size: 90px;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #50586C;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px #000;
+}
+
+.middle img {
+    width: 20%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #0000007a;
+    border: solid 5px #F5D042;
+}
+
+.middle h2 {
+    display: block;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #50586C;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px #000;
+}
+
+.step img {
+    width: 10%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #0000007a;
+    border: solid 5px #F5D042;
+}
+
+.step a {
+    color: #50586C;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-top: 1000px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #F5D042, #ffaa49);
+    border-radius: 10px;
+}
+
+.content-text {
+    color: #ffe7b2;
+    flex: 1;
+    /* ให้กล่องข้อความขยายพื้นที่อัตโนมัติ */
+    margin: 0 100px;
+}
+
+.content-text h2 {
+    color: #F5D042;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* ระยะห่างระหว่าง h2 กับ p ด้านล่าง */
+}

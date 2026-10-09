@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(167, 97, 97);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 0, 0);
+    margin: auto;
+}
+
+.Resume{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+    border: 10px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+.no-border, .no-border tr, .no-border td{
+    border: none;
+}
+
+td h1{
+    font-size: 50px;
+    color: brown;
+}
+
+#png1{
+    width: 50%;
+    object-fit: cover;
+    border: 5px solid #6b2424;
+    border-radius: 100%;
+}
+
+.col-30{
+    padding: 30px;
+    text-align: center;
+}
+
+.col-70{
+    width: 70%;
+    text-align: left;
+}
+
+hr {
+    height: 4px;
+    background-color: #ffd350;
+    border: none;
+}
+
+.table-padding-12 th, .table-padding-12 td {
+    padding: 12px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.table-cell {
+    border: 1px solid #000000;
+    font-size: 11pt;
+}
+
+.table-bordered {
+    border: 1px solid #360707;
+}
+
+.table-head {
+    background-color: #a32a4e;
+    color: #ffd350; /* Gold text on Navy background */
+    font-weight: bold;
+}
+
+.table-head th{
+    font-size: 20px;
+}
