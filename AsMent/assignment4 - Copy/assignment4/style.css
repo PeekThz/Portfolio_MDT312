@@ -1,0 +1,155 @@
+/* Reset Style & Base Settings */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0fcda;
+    color: #333333;
+    padding: 2%;
+}
+
+.grid-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 32% 43% 25%;
+    grid-template-areas: 
+        "header  header  header"
+        "main1   main2   right"
+        "footer  footer  footer";
+    gap: 20px;
+}
+
+.grid-container > div {
+    background-color: #ffffff;
+    padding: 6%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#header {
+    grid-area: header;
+    background: linear-gradient(135deg, #2b8633, #7bb369);
+    color: #ffffff;
+    text-align: center;
+    padding: 3% 2%;
+}
+
+#header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#main1 {
+    grid-area: main1;
+    background-color: #fafff4;
+    border-left: 5px solid #1f8f32;
+}
+
+#main1 h3 {
+    margin: 15px 0 8px 0;
+    font-size: 0.95rem;
+    color: #a06c0b;
+    text-transform: uppercase;
+}
+
+#main1 ul {
+    padding-left: 8%;
+    line-height: 1.7;
+}
+
+/* Main 2: Instructions Section */
+#main2 {
+    grid-area: main2;
+background-color: #fffdf4;
+}
+
+#main2 h1 {
+    color: #42351c;
+}
+
+#main2 ol {
+    padding-left: 8%;
+    line-height: 1.8;
+}
+
+#main2 li {
+    margin-bottom: 10px;
+}
+
+#main1 h2, #main2 h2, #right h2 {
+    color: #135317;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 5px;
+}
+
+#right {
+    grid-area: right;
+    background-color: #fafff4;
+    border-left: 5px solid #1f8f32;
+}
+
+#right p {
+    line-height: 1.6;
+    color: #555555;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #3d502c;
+    color: #ffffff;
+    text-align: center;
+    padding: 2%;
+}
+
+#footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+#pizzapic {
+    width: 50%;
+    margin-left: 100px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 30px #0000007a;
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "header"
+            "main1"
+            "main2"
+            "right"
+            "footer";
+        gap: 12px;
+    }
+
+    .grid-container > div {
+        padding: 8%;
+    }
+
+    #header h1 {
+        font-size: 1.5rem;
+    }
+
+    #header {
+        padding: 6% 2%;
+    }
+
+    #footer {
+        padding: 5%;
+    }
+}
